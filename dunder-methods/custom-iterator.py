@@ -14,11 +14,11 @@ class Lineup:
         if self.n < self.last_player_index:
             player = self.get_player(self.n)
             self.n += 1
-            return self.get_player(self.n)
+            return player
         elif self.n == self.last_player_index:
             player = self.get_player(self.n)
             self.n = 0
-            return self.get_player(self.n)
+            return player
 
     # def __next__(self): Lots of duplication needs to be refactored
     #     if self.n < (len(self.players) - 1):
