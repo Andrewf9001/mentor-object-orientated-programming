@@ -37,6 +37,7 @@ astros = [
 full_lineup = InfiniteLineup(astros)
 astros_lineup = full_lineup.lineup()
 
+# when you use Yield python knows to look for the keyword next and knows it is a generator
 print(next(astros_lineup))
 print(next(astros_lineup))
 print(next(astros_lineup))
